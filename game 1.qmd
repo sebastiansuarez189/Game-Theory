@@ -4,23 +4,14 @@ format: html
 editor: visual
 ---
 
-## Quarto
+## Normal Form Game
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+In this game, I model a situation in which two friends are going to a party together. Both are at the UMD shuttle bus stop, but they know that the service is unreliable so both must choose between waiting or not waiting and walking to the party place. However, the party place is far from the bus stop so the walk is long and they will be tired when arriving to the party. If they wait, there is a risk that the bus is very late or that they will have to wait another hour for the bus to arrive.
 
-## Running Code
+The Below image shows a game theoretic model of the situation:
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+![](images/20230216_181046-01.jpg)
 
-```{r}
-1 + 1
-```
+The Payoffs are Wait and Wait have a 0,0 payoff because both wait for a long time but arrive together to the party. For Wait and No Wait have a -3,-2 one person is worse of because the bus might show off or not so that person will wit for a long time, for the other person, it will have to walk home. An inverse situation happens in No Wait and wait. Finally, For No Wait and No Wait, both people will be -2,-2 because no one is going to the party and walking home.
 
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
+## 
